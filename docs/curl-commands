@@ -1,0 +1,8 @@
+# Read Hello
+curl -i -H "Content-Type: application/json" -X GET localhost:8080/hello
+
+# Read new pledge
+curl 0i -H "Content-Type: application/json" -X POST -d '{
+        "name": "Aman",
+        "statement": "I Vote to change the world!"
+    }' localhost:8080/sys
